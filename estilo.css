@@ -848,6 +848,18 @@ p{
     font-family: 'Alice', serif;
 }
 
+.discount-percent-7{
+    background: #ea4335;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    margin-bottom: 12px;
+    opacity: 1;
+    font-family: 'Alice', serif;
+    padding: 10px 10px;
+    position: unset;
+}
+
 .discount-percent{
     background: #ea4335;
     color: #fff;
