@@ -1,0 +1,1495 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* font-family: 'Alice', serif;
+    font-family: 'Stint Ultra Expanded', serif; */
+    padding: 90px 20px 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Stint+Ultra+Expanded&display=swap');
+
+/* Menu */
+.header{
+    background-color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: black;
+    text-decoration: none;
+    font-family: 'Alice', serif;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    color: black;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.nav-menu-link:hover{
+    background-color: #d569d5;
+    color: white;
+}
+
+.nav-toggle{
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/* Fondo Espacial */
+.contenedor{
+    height: 30vh;
+    background-image: linear-gradient(to top, rgba(243, 231, 233, 0.347) 0%, rgba(229, 240, 255, 0.148), #e3eeff 100%), url(Fotos/espacio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 20px 10px;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 30px;
+    color: white;
+    font-family: 'Stint Ultra Expanded', serif;
+    margin-bottom: 5px;
+}
+
+.titulo{
+    font-size: 50px;
+    font-family: 'Alice', serif;
+    background-color: #fff;
+    margin-left: 10px;
+    padding: 5px 5px;
+    color:#d552d5;
+}
+
+/* Landing Page */
+.contenedor2{
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 80vh;
+    background-image: linear-gradient(to top, rgba(243, 231, 233, 0.347) 0%, rgba(229, 240, 255, 0.148), #e3eeff 100%), url(Fotos/espacio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtema{
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Stint Ultra Expanded', serif;
+}
+
+/* CTA */
+.contact{
+    list-style: none;
+    background-color: #9696ea;
+    color: white;
+    font-size: 60px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Alice', serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a:link, .contact{
+    text-decoration: none;
+    color: white;
+}
+
+/* Seccion de color 1 */
+.cuadro-azul{
+    background-image: linear-gradient(to top, #245ec2 0%, #04befe 100%);
+    border-radius: 10px;
+    padding: 20px 20px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.section-family{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Alice', serif;
+}
+            
+/* Seccion de color 2 */
+.cuadro-gris{
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    border-radius: 10px;
+    padding: 20px 35px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.section-galaxy{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Alice', serif;
+}
+
+/* Seccion de color 3 */
+.cuadro-rosa{
+    background-image: linear-gradient(to top, #e8198b 0%, #b074f0 100%);
+    border-radius: 10px;
+    padding: 20px 45px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.section-services{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Alice', serif;
+}
+
+/* Seccion de color 4 */
+.cuadro-blanco{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 75px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.section-blog{
+    color: #4040de;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Alice', serif;
+}
+
+/* Porque nos eligen  */
+.contenedor3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.eligen, .sub1{
+    width: 70%;
+    height: 100%;
+    font-size: 30px;
+    margin-top: 5px;
+    margin: auto;
+    font-family: 'Alice', serif;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    background-color: #6FC9FD;
+}
+
+.sub1{
+    font-size: 45px;
+    font-family: 'Stint Ultra Expanded', serif;
+}
+
+.idea-eligen{
+    width: 6%;
+    height: 6%;
+}
+
+/* Esto a Esto */
+.contenedor4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.esto{
+    width: 70%;
+    height: 100%;
+}
+
+/* Testimonios */
+.contenedor5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.testimonio{
+    width: 70%;
+    height: 100%;
+}
+
+.sub2{
+    font-size: 40px;
+    margin: auto;
+    font-family: 'Alice', serif;
+    background-color: #6FC9FD;
+    padding: 5px 5px;
+    color:white;
+}
+
+/* Formulario de Contacto */
+.contenedor6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contact_form{	
+	width: 45%;
+    margin-top: 15px;
+    height: auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+    background-color: #ebdfee; 
+    padding-left: 30px; 
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+input{
+    margin: auto;
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #d569d5; 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+textarea{
+    background-color: #fbfbfb; 
+      width: 405px; 
+      height: 150px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: #d569d5; 
+      margin-top: 10px;  
+      padding-left: 10px;
+      margin-bottom: 20px; 
+      padding-top: 15px; 
+  }
+
+label{
+    display: block; 
+	float: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #d569d5; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+button p{
+	color: #fff; 
+}
+
+span{
+	color: #ab4493; 
+}
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+h1{
+	font-size: 39px;
+    font-family: 'Stint Ultra Expanded', serif;
+	text-align: center; 
+	padding-bottom: 20px; 
+	color: #d569d5;
+}
+
+h3{
+	font-size: 20px; 
+	padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Alice', serif;
+	color: #0e0e0e;   
+}
+
+p{
+	font-size: 20px; 
+    font-family: 'Alice', serif;
+	color: #0e0e0e; 
+}
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+ font-size: 15px;
+ font-family: 'Alice', serif;
+}
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+ font-size: 15px;
+ font-family: 'Alice', serif;
+}
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #2e8ac0;
+}
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #6FC9FD;
+}
+
+/* Contacto */
+.contenedor7{
+    margin: auto;
+    width: 100%;
+    height: 15%;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.text-ultimo{
+    font-family: 'Stint Ultra Expanded', serif;
+    color: white;
+    font-size: 30px;
+    margin: auto 15px;
+    line-height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+}
+
+.alien{
+    width: auto;
+    height: 300px;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    color: white;
+    font-family: 'Alice', serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-media-icon{
+    color: white;
+    font-size: 45px;
+    margin: auto;
+    margin-top: 5px;
+
+    background-color: #d569d5;
+    border-radius: 15px;
+    padding: 1px 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-2{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px 5px;
+        color: white;
+        font-family: 'Alice', serif;
+
+        display: flex;
+        margin-right: 40px;
+        list-style: none;
+}
+
+/* Texto final */
+.texto-final{
+    text-align: center;
+    margin-top: 10px;
+    border-top: #e2c1e2 3px solid;
+    font-size: 15px;
+    font-family: 'Alice', serif;
+    width: 100%;
+}
+
+/* Familia Intergalactica Index2 */
+.contenedor-titulo{
+    margin-top: 10px;
+}
+
+.cuadro-azul-titulo{
+    background-image: linear-gradient(to top, #245ec2 0%, #04befe 100%);
+    padding: 20px 20px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.section-family-titulo{
+    color: white;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    font-size: 40px;
+    font-family: 'Alice', serif;
+}
+
+.titulo-galactico{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Alice', serif;
+    margin-bottom: 15px;
+}
+
+.n-karol{
+    color: #1348a3;
+    font-family: 'Stint Ultra Expanded', serif;
+    font-weight: bold;
+
+}
+
+.number{
+    color: #1348a3;
+    font-family: 'Stint Ultra Expanded', serif;
+}
+
+.karol{
+    width: 70%;
+    height: 100%;
+    font-size: 30px;
+    margin: auto;
+    font-family: 'Alice', serif;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #6fc9fd7e; 
+}
+
+.copy-karol{
+    font-family: 'Alice', serif;
+    margin: auto;
+}
+
+.bienvenida{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Alice', serif;
+}
+
+.invitacion{
+    text-align: center;
+    background-color: #6fc9fd7e;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color:#1348a3;
+    margin: auto;
+    font-size: 25px;
+    font-family: 'Alice', serif;
+}
+
+/* Galaxias Diseñadas Index3 */
+.cuadro-gris-titulo{
+    background: #C9CCD3;
+    list-style: none;
+    padding: 20px 20px;
+    margin-bottom: 5px;
+}
+
+.section-galaxy-titulo{
+    color: black;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    font-size: 40px;
+    font-family: 'Alice', serif;
+}
+
+.introduccion{
+    width: 70%;
+    height: 100%;
+    font-size: 35px;
+    margin: auto;
+    font-family: 'Alice', serif;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.texto-mini{
+    font-family: 'Alice', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-gallery{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.clase{
+    font-size: 2rem;
+    color:#ab4493;
+    margin: 10px auto;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    width: 30%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Servicios Cometa Index4 */
+.cuadro-rosa-titulo{
+    background-image: linear-gradient(to top, #e8198b 0%, #b074f0 100%);
+    padding: 20px 45px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.section-services-titulo{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Alice', serif;
+}
+
+.servicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rosa{
+    top: 30px;
+    left: 300px;
+    background: transparent;
+    width: 180px;
+    height: 150px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alice', serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10%;
+    margin: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.texto-services{
+    font-family: 'Alice', serif;
+    text-align: start;
+    font-weight: normal;
+}
+
+/* Blog Espacial Index5 */
+.cuadro-blanco-titulo{
+    background-color: #fff;
+    list-style: none;
+    padding: 20px 20px;
+    margin-bottom: 5px;
+}
+
+.section-blog-titulo{
+    color: #9696ea;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    font-size: 40px;
+    font-family: 'Alice', serif;
+}
+
+.contenedor8{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 10px 10px;
+    flex-direction: row;
+}
+
+.row{
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+}
+
+.caja{
+    width: 100%;
+    margin: auto;
+    font-family: 'Alice', serif;
+    font-weight: bold;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.caption{
+    height: 270px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.img-responsive{
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-center{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.text-justify{
+    margin: auto;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-center-boton{
+    list-style: none;
+    background-color: #9696ea;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Alice', serif;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.discount-price{
+    color: #0e0e0e;
+    flex: 1;
+    font-size: 23px;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.discount-price-antes{
+    color: #a0a0a0;
+    display: flex;
+    float: left;
+    font-size: 18px;
+    margin-right: 5px;
+    font-family: 'Alice', serif;
+    margin-left: 3px;
+    opacity: 1;
+    text-decoration: line-through;
+}
+
+.total-price,
+.has-discount{
+    color: #ab4493;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.total-price-has-discount-despues{
+    font-family: 'Alice', serif;
+}
+
+.discount-percent{
+    background: #ea4335;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    margin-bottom: 12px;
+    opacity: 1;
+    font-family: 'Alice', serif;
+    padding: 8px 8px 8px 0;
+    position: unset;
+}
+
+/* Calendario Index17 */
+.contenedor10{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: start;
+}
+
+.row-7{
+    width: 100%;
+    margin: auto;
+}
+
+.caja-7{
+    margin: auto;
+    font-family: 'Alice', serif;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.img-responsive-7{
+    padding: 5px 5px;
+    width: 200px;
+}
+
+.caption7{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-center-7{
+    font-size: 60px;
+    margin: auto 50px;
+}
+
+.text-justify-7{
+    text-align: center;
+}
+
+.section-vc{
+    font-weight: 400;
+    color: #151515;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0;
+}
+
+.section-vc>div {
+    border: 0px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-VC>div:last-child img:last-child {
+    margin-left: 4px;
+}
+
+.discount-price-gratis{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 30px;
+    color: #fff;
+    font-family: 'Alice', serif;
+}
+
+.discount-price-7{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.gratis{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 30px;
+}
+
+.linea{
+    margin: 10px 20px;
+    width: 100%;
+    border-top: #e2c1e2 5px solid;
+}
+
+.descriptivo{
+    width: auto;
+}
+
+.txt{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.txt-texto{
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.contenedor9{
+    justify-content: space-between;
+    align-items: center;
+
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: row;
+}
+
+.libros{
+    font-size: 25px;
+    color: #ab4493;
+    margin: auto;
+    text-align: start;
+}
+
+/* Index8 CJM */
+.botton{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discount-percent{ /*descuento*/
+    margin: auto;
+    background: #ea4335;
+    color: #fff;
+    float: right;
+    font-size: 50px;
+    margin-top: 12px;
+    opacity: 1;
+    padding: 8px 8px 8px 0;
+    position: unset;
+}
+
+.discount-price-antes-{/*precio antes*/
+    color: #a0a0a0;
+    font-size: 50px;
+    font-family: 'Alice', serif;
+    opacity: 1;
+    text-decoration: line-through;
+    margin: auto;
+}
+
+.total-price-has-discount-despues{ /*precio por descuento*/
+    color: #ab4493;
+    text-align: center;
+    font-size: 50px;
+}
+
+.pago{
+    margin-top: 20px;
+    margin-bottom: auto;
+    font-size: 30px;
+}
+
+.social-media-icon-pago{
+    color: white;
+    font-size: 35px;
+    margin: 9%;
+    margin-bottom: 20px;
+    font-family: 'Alice', serif;
+
+    background-color: #d569d5;
+    border-radius: 15px;
+    padding: 5px 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 770px){
+    body{
+        padding-top: 70px;
+    }
+      
+    .header{
+        height: 60px;
+    }
+        
+    .logo{
+        font-size: 25px;
+        padding: 0 25px;
+        line-height: normal;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color:#e2c1e2 ;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        font-size: 25px;
+        line-height: 70px;
+        margin-right: auto;
+    }
+    
+    .nav-menu-link:hover{
+        background-color: #d569d5;
+    }
+    
+    .nav-toggle{
+        display: block;
+        color: black;
+        margin-right: 10%;
+        font-size: 40px;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+
+    .logo-img{
+        width: 80px;
+    }
+   
+    .title{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor2{
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .subtema{
+        font-size: 20px;
+    }
+
+    .contact{
+        background-color: #9696ea;
+        color: white;
+        font-size: 32px;
+    }
+
+    .section-family{
+        font-size: 20px;
+    }
+
+    .section-galaxy{
+        font-size: 20px;
+    }
+
+    .section-services{
+        font-size: 20px;
+    }
+
+    .cuadro-blanco{
+        padding: 20px 60px;
+    }
+
+    .section-blog{
+        font-size: 20px;
+    }
+
+    .eligen{
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+    }
+
+    .sub1{
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .idea-eligen{
+        width: 15%;
+        height: 15%;
+    }
+
+    .esto{
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonio{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sub2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* Formulario */
+    .formulario, .contenedor6, .contact_form{
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    h3{
+        font-size: 20px;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    .colocar_nombre{
+        text-align: center;
+        font-family: 'Alice', serif;
+        margin: auto;
+    }
+
+    #nombre{
+        margin: auto 20%;
+        max-width: 55%; 
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .colocar_apellido{
+        text-align: center;
+        font-family: 'Alice', serif;
+        margin: auto;
+    }
+
+    #apellido{
+        margin: auto 20%;
+        max-width: 55%; 
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .colocar_email{
+        text-align: center;
+        margin: auto;
+        font-family: 'Alice', serif;
+    }
+
+    #email{
+        margin: auto 20%;
+        max-width: 55%; 
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .colocar_telefono{
+        text-align: center;
+        font-family: 'Alice', serif;
+        font-size: 18px;
+        margin: auto;
+    }
+
+    #telefono{
+        margin: auto 20%;
+        max-width: 55%; 
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .colocar_mensaje{
+        text-align: center;
+        font-family: 'Alice', serif;
+        font-size: 18px;
+        margin: auto;
+    }
+
+    #mensaje{
+        margin: auto 20%;
+        max-width: 55%; 
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #enviar{
+        margin: auto 20%;
+        max-width: 55%; 
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .aviso{
+        text-align: center;
+        font-family: 'Alice', serif;
+        font-size: 12px;
+        margin: auto;
+    }
+
+    /* Footer */
+    .contenedor7{
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+        border-radius: 20px;
+    }
+
+    .text-ultimo{
+        margin: 15px 15px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .alien{
+        height: 85px;
+        width: auto;
+    }
+
+    .text{
+        font-size: 25px;
+    }
+
+    .social-media-icon{
+        margin: 10px 5px;
+        font-size: 35px;
+
+        justify-content: space-between;
+    }
+    
+    .logo-2{
+            text-align: center;
+            margin: auto;
+    }
+    
+    /* Texto final */
+    .texto-final{
+        font-size: 12px;
+    }
+
+    /* Index2 */ 
+    .section-family-titulo{
+        font-size: 35px;
+    }
+    
+    .titulo-galactico{
+        font-size: 30px;
+    }
+    
+    .karol{
+        width: 100%;
+        font-size: 23px;
+    }
+    
+    .copy-karol{
+        font-size: 18px;
+    }
+    
+    .bienvenida{
+        font-size: 28px;
+    }
+
+    /* Index3 Gallery */
+    .section-galaxy-titulo{
+        font-size: 35px;
+    }
+
+    .introduccion{
+        width: 100%;
+    }
+
+    .texto-mini{
+        font-size: 18px;
+    }
+
+    .img-gallery{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .subtitulo{
+        font-size: 50px;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+
+    /* Servicios */     
+    .rosa{
+        width: 200%;
+        height: 450%;
+        font-size: 30px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .texto-service{
+        font-size: 16px;
+    }
+    
+    /* Blog Espacial Index5 */      
+    .row{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .caption{
+        height: 300px;
+    }
+
+    /* Calendario Index17 */
+    .contenedor10{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linea{
+        width: 100%;
+    }
+
+    .section-vc{
+        margin: auto;
+    }
+
+    .img-responsive-7{
+        width: 100px;
+    }
+
+    .text-center-7{
+        text-align: center;
+        margin: 10px;
+        font-size: 25px;
+    }
+
+    .text-justify-7{
+        text-align: center;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .gratis{
+        margin: auto;
+        text-align: center;
+        font-size: 30px;        
+    }
+
+    .discount-percent{ /*Descuento*/
+        margin-right: auto;
+        font-size: 30px;
+    }
+
+    .discount-price-antes-{/*precio antes*/
+        font-size: 30px;
+    }
+
+    .discount-price-7{ /*Paypal*/
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    .total-price-has-discount-despues{
+        font-family: 'Alice', serif;
+        color: #ab4493;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .txt{
+        font-size: 25px;
+    }
+
+    .txt-texto{
+        font-size: 18px;
+    }
+
+    .contenedor9{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .libros{
+        text-align: center; 
+    }
+
+    .discount-price-antes{
+        font-size: 20x;
+    }
+
+    .pago{
+        margin: auto;
+    }
+
+    .social-media-icon-pago{
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .discount-price-gratis{
+        margin: auto;
+        padding: 5px 5px;
+        font-size: 20px;
+        font-family: 'Alice', serif;
+    }
+
+    
+}
+
