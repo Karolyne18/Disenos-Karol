@@ -1126,30 +1126,27 @@ p{
     .contact{
         background-color: #9696ea;
         color: white;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .section-family{
-        font-size: 30px;
-        margin-bottom: 5px;
+        font-size: 40px;
     }
 
     .section-galaxy{
-        font-size: 30px;
-        margin-bottom: 5px;
+        font-size: 40px;
     }
 
     .section-services{
-        font-size: 30px;
-        margin-bottom: 5px;
+        font-size: 40px;
     }
 
     .cuadro-blanco{
-        padding: 30px 70px;
+        padding: 20px 70px;
     }
 
     .section-blog{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .eligen{
