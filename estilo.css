@@ -1051,11 +1051,11 @@ p{
 
 @media screen and (max-width: 770px){
     body{
-        padding-top: 70px;
+        padding-top: 80px;
     }
       
     .header{
-        height: 60px;
+        height: 70px;
     }
         
     .logo{
@@ -1085,7 +1085,7 @@ p{
     .nav-menu-item{
         font-size: 30px;
         line-height: 70px;
-        margin-left: auto;
+        margin: 100%;
     }
     
     .nav-menu-link:hover{
