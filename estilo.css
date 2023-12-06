@@ -1407,6 +1407,10 @@ p{
         font-size: 32px;
     }
 
+    .text-justify{
+        font-size: 23px;
+    }
+    
     /* Calendario Index17 */
     .contenedor10{
         justify-content: space-between;
