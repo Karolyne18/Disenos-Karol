@@ -1060,7 +1060,7 @@ p{
         
     .logo{
         font-size: 30px;
-        padding: 0 30px;
+        padding: 5px 30px;
         line-height: normal;
     }
     
@@ -1083,9 +1083,9 @@ p{
     }
     
     .nav-menu-item{
-        font-size: 30px;
+        font-size: 100px;
         line-height: 70px;
-        margin-right: 100%;
+        margin-block-end: 90%;
     }
     
     .nav-menu-link:hover{
