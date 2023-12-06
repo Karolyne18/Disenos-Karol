@@ -1400,6 +1400,7 @@ p{
     }
     
     .caption{
+        width: 100%;
         height: 110%;
     }
 
