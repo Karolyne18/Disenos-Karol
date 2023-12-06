@@ -1095,7 +1095,7 @@ p{
     .nav-toggle{
         display: block;
         color: black;
-        margin-left: 50%;
+        margin: auto;
         font-size: 50px;
     }
 
