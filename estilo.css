@@ -1458,6 +1458,7 @@ p{
         font-size: 20px;
         width: 100%;
         margin-bottom: auto;
+        margin-right: auto;
     }
 
     .total-price-has-discount-despues{
@@ -1472,7 +1473,7 @@ p{
     }
 
     .txt-texto{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .contenedor9{
