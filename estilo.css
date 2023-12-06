@@ -1327,7 +1327,7 @@ p{
     
     /* Texto final */
     .texto-final{
-        font-size: 12px;
+        font-size: 15px;
     }
 
     /* Index2 */ 
@@ -1400,8 +1400,8 @@ p{
     }
     
     .caption{
-        width: 50%;
-        height: 300px;
+        width: 70%;
+        height: 350px;
     }
 
     /* Calendario Index17 */
