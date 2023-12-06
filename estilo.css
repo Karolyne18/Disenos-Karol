@@ -1396,11 +1396,19 @@ p{
     /* Blog Espacial Index5 */      
     .row{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     
     .caption{
-        height: 300px;
+        height: 200px;
+    }
+
+    .text-center{
+        font-size: 35px;
+    }
+    
+    .text-justify{
+      font-size: 25px;  
     }
 
     /* Calendario Index17 */
