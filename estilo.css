@@ -1085,7 +1085,7 @@ p{
     .nav-menu-item{
         font-size: 25px;
         line-height: 80px;
-        margin-right: 20%;
+        margin: 20%;
     }
     
     .nav-menu-link:hover{
