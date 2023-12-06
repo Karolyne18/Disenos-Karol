@@ -1400,15 +1400,11 @@ p{
     }
     
     .caption{
-        height: 270px;
+        height: 250px;
     }
 
     .text-center{
-        font-size: 32px;
-    }
-
-    .text-justify{
-        font-size: 23px;
+        font-size: 35px;
     }
     
     /* Calendario Index17 */
