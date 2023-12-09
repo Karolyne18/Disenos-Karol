@@ -1139,23 +1139,27 @@ p{
     }
 
     .section-family{
-        font-size: 25px;
+        font-size: 23px;
+        margin-bottom: auto;
     }
 
     .section-galaxy{
-        font-size: 25px;
+        font-size: 23px;
+        margin-bottom: auto;
     }
 
     .section-services{
-        font-size: 25px;
+        font-size: 23px;
+        margin-bottom: auto;
     }
 
     .cuadro-blanco{
-        padding: 18px 70px;
+        padding: 15px 65px;
     }
 
     .section-blog{
-        font-size: 25px;
+        font-size: 23px;
+        margin-bottom: auto;
     }
 
     .eligen{
